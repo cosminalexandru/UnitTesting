@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Tests {
+public class EquivalencePartitioningTests {
 
     @Test
     public void C_11() {

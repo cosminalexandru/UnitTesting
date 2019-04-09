@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Program {
+class Program {
 
     private int n, x, y;
     private ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -25,7 +25,7 @@ public class Program {
         }
     }
 
-    public static int searchedNumbers(int n, int x, int y, ArrayList<Integer> numbers) {
+    static int searchedNumbers(int n, int x, int y, ArrayList<Integer> numbers) {
         int numberOfOccurrences = 0;
         if (x < 0 || y < 0)
             return -1;
@@ -36,17 +36,19 @@ public class Program {
 
 
         for (Integer number : numbers) {
-            int sum = 1;
+            if (number >= x && number <= y) {
+                int sum = 1;
 
-            for (int d = 2; d <= number / 2; ++d) {
-                if (number % d == 0) {
-                    sum += d;
+                for (int d = 2; d <= number / 2; ++d) {
+                    if (number % d == 0) {
+                        sum += d;
+                    }
                 }
-            }
 
-            if (sum == number) {
-                ++numberOfOccurrences;
-                System.out.println(number);
+                if (sum == number) {
+                    ++numberOfOccurrences;
+                    System.out.println(number);
+                }
             }
         }
         return numberOfOccurrences;
