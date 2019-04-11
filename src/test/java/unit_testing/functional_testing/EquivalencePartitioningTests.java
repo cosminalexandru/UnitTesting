@@ -1,4 +1,7 @@
+package unit_testing.functional_testing;
+
 import org.junit.Test;
+import unit_testing.Program;
 
 import java.util.ArrayList;
 
@@ -13,7 +16,7 @@ public class EquivalencePartitioningTests {
         numbers.add(6);
         numbers.add(7);
         numbers.add(28);
-        numbers.add(4);
+        numbers.add(3);
         int numberOfPerfectNumbers = Program.searchedNumbers(5, 3, 29, numbers);
         assertEquals(2, numberOfPerfectNumbers);
     }
@@ -25,7 +28,7 @@ public class EquivalencePartitioningTests {
         numbers.add(6);
         numbers.add(7);
         numbers.add(28);
-        numbers.add(4);
+        numbers.add(3);
         int numberOfPerfectNumbers = Program.searchedNumbers(5, 15, 9, numbers);
         assertEquals(-1, numberOfPerfectNumbers);
     }
