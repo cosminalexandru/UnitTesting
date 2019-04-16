@@ -43,4 +43,16 @@ public class MTests {
         int numberOfPerfectNumbers = Program.searchedNumbers(5, 6, 28, numbers);
         assertEquals(2, numberOfPerfectNumbers);
     }
+
+    @Test
+    public void yEquals0() {
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(2);
+        numbers.add(6);
+        numbers.add(28);
+        numbers.add(30);
+        numbers.add(29);
+        int numberOfPerfectNumbers = Program.searchedNumbers(5, 3, 0, numbers);
+        assertEquals(-1, numberOfPerfectNumbers);
+    }
 }

@@ -21,20 +21,9 @@ public class StatementCoverageTests {
         assertEquals(2, numberOfPerfectNumbers);
     }
 
-    @Test
-    public void SC2() {
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        numbers.add(10);
-        numbers.add(13);
-        numbers.add(7);
-        numbers.add(19);
-        numbers.add(30);
-        int numberOfPerfectNumbers = Program.searchedNumbers(5, 3, 29, numbers);
-        assertEquals(0, numberOfPerfectNumbers);
-    }
 
     @Test
-    public void SC3() {
+    public void SC2() {
         int numberOfPerfectNumbers = Program.searchedNumbers(102, 3, 29, new ArrayList<Integer>());
         assertEquals(-1, numberOfPerfectNumbers);
     }

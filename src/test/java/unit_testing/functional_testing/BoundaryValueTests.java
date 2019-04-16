@@ -30,7 +30,7 @@ public class BoundaryValueTests {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         for (int i = 0; i < 100; i = i + 20)
             numbers.add(i);
-        int numberOfPerfectNumbers = Program.searchedNumbers(100, 3, 29, numbers);
+        int numberOfPerfectNumbers = Program.searchedNumbers(99, 3, 29, numbers);
         assertEquals(0, numberOfPerfectNumbers);
     }
 

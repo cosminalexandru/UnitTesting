@@ -16,7 +16,7 @@ public class EquivalencePartitioningTests {
         numbers.add(6);
         numbers.add(7);
         numbers.add(28);
-        numbers.add(3);
+        numbers.add(4);
         int numberOfPerfectNumbers = Program.searchedNumbers(5, 3, 29, numbers);
         assertEquals(2, numberOfPerfectNumbers);
     }
